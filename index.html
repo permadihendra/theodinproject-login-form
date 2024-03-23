@@ -4,6 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <div class="image-container">
+          <img class="card-image" src="./images/leaf-unsplash.jpg" alt="" />
+
+          <div class="image-text">
+            <img
+              src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+              alt=""
+            />
+            <h1>ODIN</h1>
+          </div>
+          <
+          <div class="image-text-credit">
+            <span
+              >Photo by
+              <a
+                href="https://unsplash.com/@olenkasergienko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Olena Bohovyk</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/green-fern-plant-in-close-up-photography-r0M9HrfJMBM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+            </span>
+          </div>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="jumbotron">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help realize your deepest dreams.<br />Sign up
+            <em>now</em> to get started
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-signup">
+          <form action="#" method="">
+            <legend><h2>Let's do this!!</h2></legend>
+            <fieldset>
+              <div>
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" name="first_name" id="first_name" />
+              </div>
+              <div>
+                <label for="last_name">LAST NAME</label>
+                <input type="text" name="last_name" id="last_name" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div>
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="text" name="phone_number" id="phone_number" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div>
+                <label for="connfirm_password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="connfirm_password"
+                  id="connfirm_password"
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="create-account">
+                <input
+                  type="submit"
+                  value="Create Account"
+                  class="btn-submit"
+                />
+                <span>Already have an account ? <a href="#">Log in</a></span>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
