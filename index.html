@@ -52,27 +52,59 @@
             <fieldset>
               <div>
                 <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" />
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="John "
+                  required
+                />
               </div>
               <div>
                 <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" />
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Doe"
+                  required
+                />
               </div>
             </fieldset>
             <fieldset>
               <div>
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email@example.com"
+                  data-help="Format email@email.com"
+                  required
+                />
               </div>
               <div>
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="text" name="phone_number" id="phone_number" />
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  placeholder="082712676367"
+                  required
+                />
               </div>
             </fieldset>
             <fieldset>
               <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="******"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
               </div>
               <div>
                 <label for="connfirm_password">CONFIRM PASSWORD</label>
@@ -80,6 +112,9 @@
                   type="password"
                   name="connfirm_password"
                   id="connfirm_password"
+                  placeholder="******"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
                 />
               </div>
             </fieldset>

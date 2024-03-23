@@ -104,11 +104,27 @@ fieldset div {
   margin-right: 3rem;
 }
 
-input {
+fieldset div input {
   border: 1px solid grey;
   border-radius: 0.3rem;
   width: 18rem;
   height: 2rem;
+}
+
+fieldset div input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + label {
+  content: " (" attr(data-help) ")";
+}
+
+fieldset div input:valid {
+  border: 2px solid green;
+}
+
+fieldset div input:focus:invalid {
+  border: 2px solid red;
 }
 
 label {
